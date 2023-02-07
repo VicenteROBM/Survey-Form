@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,20 +14,82 @@
         <p id="description">Thank you for taking the time to help us improve the platform</p>
     </div>
 
-    <div id="survey-form">
+    
+    <form action="" id="survey-form">
         <div class="survey-part">
-            <label for="label-name">Name <input type="text" id="name" required placeholder="Your name..."></label>
+            <label for="name-label" id="name-label">Name <input type="text" id="name" required placeholder="Your name..."></label>
         </div>
+
         <div class="survey-part">
-            <label for="label-email">email <input type="email" id="email" required placeholder="Your email..."></label>
+            <label for="email-label" id="email-label">email <input type="email" id="email" required placeholder="Your email..."></label>
         </div>
+
         <div class="survey-part">
-            <label for="age">Age (Optional) <input type="number" id="age"  placeholder="Your age..." min="14" max="120"></label>
+            <label for="age" id="number-label" >Age (Optional) <input type="number" id="number"  placeholder="Your age..." min="14" max="120"></label>
         </div>
-    </div>
+
+        <div class="survey-part">
+            <label for="option-role">
+             Which option best describes your current role?
+            <select name="option-role" id="option-role" id="dropdown">
+                <option value="select-current" selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full time job</option>
+                <option value="full-time-student">Full time student</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="other">other</option>
+            </select>
+        </label>
+        </div>
+
+        <div class="survey-part">
+
+        
+                <label class="radio-button" for="definitely"><input type="radio" class="radio-button" name="definitely" value="definitely">Definitely</label>
+                <label class="radio-button" for="maybe"><input type="radio" class="radio-button" name="maybe" value="maybe">Maybe</label>
+                <label class="radio-button" for="not-sure"><input type="radio" class="radio-button" name="not-sure" value="not-sure">Not sure</label>
+            </div>
+        
+        <div class="survey-part">
+            <label for="">
+                What is your favorite feature of freeCodeCamp?
+                <select name="" id="">
+                    <option value="select-option" selected>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="survey-part">
+            <label for="">
+                <label for=""><input value="front-ened" type="checkbox">Front-end Projects</label>
+                <label for=""><input value="back-end"  type="checkbox">Back-end Projects</label>
+                <label for=""><input value="data-visualitazion"  type="checkbox">Data Visualization</label>
+                <label for=""><input value="challenges"  type="checkbox">Challenges</label>
+                <label for=""><input value="open-source"  type="checkbox">Open Source Community</label>
+                <label for=""><input value="gitter"  type="checkbox">Gitter help rooms</label>
+                <label for=""><input value="videos"  type="checkbox">Videos</label>
+                <label for=""><input value="city-meetup"  type="checkbox">City Meetups</label>
+                <label for=""><input value="wiki"  type="checkbox">Wiki</label>
+                <label for=""><input value="additional"  type="checkbox">Additional Courses</label>
+            </label>
+        </div>
+
+        <div class="survey-part">
+        <label for="comments">
+                 Any comments or suggestions?
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </label>
+        </div>
+
+        <div class="survey-part">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    
 
 </div>
-</body>
-</html>
 </body>
 </html>
