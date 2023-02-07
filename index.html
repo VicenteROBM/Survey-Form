@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time help us imrpove the platform</p>
-    
-    <form action="get" id="survey-form">
-        <label id="name-label"><input type="text" id="name" placeholder="Mario"></label>
-        <label id="email-label"><input type="email" id="email" placeholder="example@gmail.com"></label>
-        <label id="number-label"><input type="number" id="number" min="13" max="120" placeholder="18"></label>
-        <select name="" id="dropdown">
-            <!--
-                2 options to chose from
-            -->
-        </select>
+<div id="content">
+    <div id="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
 
-    </form>
+    <div id="survey-form">
+        <div class="survey-part">
+            <label for="label-name">Name <input type="text" id="name" required placeholder="Your name..."></label>
+        </div>
+        <div class="survey-part">
+            <label for="label-email">email <input type="email" id="email" required placeholder="Your email..."></label>
+        </div>
+        <div class="survey-part">
+            <label for="age">Age (Optional) <input type="number" id="age"  placeholder="Your age..." min="14" max="120"></label>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
 </body>
 </html>
